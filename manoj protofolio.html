@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MANOJKUMAR.A - Aspiring AI & Data Science Developer</title>
+    <!-- Load Tailwind CSS via CDN --><script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- Load Lucide Icons --><script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Define the new Amber/Orange accent color */
+        :root {
+            --accent-color: #f59e0b; /* Tailwind amber-500 */
+        }
+        /* Custom Styles and Font Setup */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117; /* GitHub Dark Theme Background */
+            color: #c9d1d9; /* Light Gray Text */
+            scroll-behavior: smooth;
+        }
+        /* Continuous subtle pulse animation for prominent elements */
+        @keyframes pulse-subtle {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.2); }
+            50% { box-shadow: 0 0 0 4px rgba(245, 158, 11, 0); }
+        }
+        .section-header {
+            border-left: 4px solid var(--accent-color);
+            padding-left: 1rem;
+            margin-bottom: 2rem;
+        }
+        .card {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 0.75rem; /* rounded-xl */
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 20px rgba(245, 158, 11, 0.15);
+        }
+        .hero-pulse {
+            animation: pulse-subtle 3s infinite;
+        }
+        /* Style for the custom navigation dropdown (for mobile) */
+        #mobile-menu {
+            display: none;
+        }
+        #mobile-menu.open {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen">
+
+    <!-- Navbar --><nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 shadow-lg backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Name --><div class="flex-shrink-0">
+                    <a href="#hero" class="text-xl font-extrabold text-amber-500 tracking-wider">MANOJKUMAR.A</a>
+                </div>
+
+                <!-- Desktop Menu --><div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                    <a href="#about" class="text-gray-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition duration-150">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition duration-150">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition duration-150">Projects</a>
+                    <a href="#achievements" class="text-gray-300 hover:text-amber-500 px-3 py-2 text-sm font-medium transition duration-150">CP Activity</a>
+                    <a href="#contact" class="bg-amber-500 text-gray-900 px-4 py-2 text-sm font-semibold rounded-full hover:bg-amber-400 transition duration-150">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button --><div class="sm:hidden flex items-center">
+                    <button id="menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-amber-500" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <i data-lucide="menu" class="h-6 w-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown --><div class="sm:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-amber-500 hover:bg-gray-700" onclick="closeMenu()">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-amber-500 hover:bg-gray-700" onclick="closeMenu()">Skills</a>
+                <a href="#projects" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-amber-500 hover:bg-gray-700" onclick="closeMenu()">Projects</a>
+                <a href="#achievements" class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-amber-500 hover:bg-gray-700" onclick="closeMenu()">CP Activity</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 bg-amber-500 hover:bg-amber-400" onclick="closeMenu()">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+        <!-- 1. Hero / Intro Section --><section id="hero" class="text-center pt-8 pb-20">
+            <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-amber-500 shadow-xl hero-pulse">
+                <!-- PHOTO SOURCE UPDATED TO USE THE LATEST UPLOADED IMAGE REFERENCE -->
+                <img src="/files/uploaded:WhatsApp Image 2025-10-08 at 09.16.10_546f71a5.jpg-4c24618a-62c6-4f80-8fc5-7d058626fe64" 
+                     alt="MANOJKUMAR.A Profile Photo" 
+                     class="w-full h-full object-cover"
+                     onerror="this.onerror=null;this.src='https://placehold.co/128x128/1F2937/FFFFFF?text=MA'">
+            </div>
+            <h1 class="text-5xl font-extrabold text-white mb-2 tracking-tight">MANOJKUMAR.A</h1>
+            <p class="text-xl text-amber-500 font-semibold mb-6">B.Tech AI & Data Science Student</p>
+
+            <div class="max-w-3xl mx-auto text-lg text-gray-400">
+                <!-- Bio Updated for AI/DS Focus --><p class="leading-relaxed">
+                    Hi, I'm MANOJKUMAR.A, a motivated B.Tech student at Velammal Engineering College specializing in **Artificial Intelligence and Data Science**. My foundation is built on strong programming fundamentals in C, C++, Java, and Python. While I am just beginning my Full-Stack journey, my focus is on leveraging these core skills to build intelligent, efficient, and scalable web solutions.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. About Section --><section id="about" class="py-12 border-t border-gray-700">
+            <h2 class="text-3xl font-bold text-white section-header">About & Education</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="card p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-amber-500 flex items-center">
+                        <i data-lucide="graduation-cap" class="w-5 h-5 mr-2"></i> Education
+                    </h3>
+                    <p class="text-gray-300">
+                        **Velammal Engineering College**
+                        <br>
+                        B.Tech. Artificial Intelligence and Data Science
+                        <br>
+                        *Duration: 2024 - 2028*
+                    </p>
+                </div>
+                <div class="card p-6 shadow-lg">
+                    <h3 class="text-xl font-semibold mb-4 text-amber-500 flex items-center">
+                        <i data-lucide="target" class="w-5 h-5 mr-2"></i> Career Focus
+                    </h3>
+                    <p class="text-gray-300">
+                        My primary goal is to become a **Full-Stack Developer**. I am actively learning the MERN stack (MongoDB, Express, React, Node.js) and dedicated to mastering the practical application of algorithms and data structures in real-world web development.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Skills Section (Reduced to Core Languages) --><section id="skills" class="py-12 border-t border-gray-700">
+            <h2 class="text-3xl font-bold text-white section-header">Foundational Skills</h2>
+            <p class="text-gray-400 mb-6 italic">Proficiency in these core languages is the backbone of my technical learning.</p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-6">
+
+                <!-- Programming Languages --><div class="card p-6 text-center hero-pulse">
+                    <i data-lucide="terminal" class="w-10 h-10 mx-auto mb-2 text-green-500"></i>
+                    <p class="text-base font-medium">Python (Basics)</p>
+                </div>
+                <div class="card p-6 text-center hero-pulse">
+                    <i data-lucide="code" class="w-10 h-10 mx-auto mb-2 text-red-500"></i>
+                    <p class="text-base font-medium">Java (Basics)</p>
+                </div>
+                <div class="card p-6 text-center hero-pulse">
+                    <i data-lucide="git-branch" class="w-10 h-10 mx-auto mb-2 text-blue-500"></i>
+                    <p class="text-base font-medium">C (Basics)</p>
+                </div>
+                <div class="card p-6 text-center hero-pulse">
+                    <i data-lucide="git-branch-plus" class="w-10 h-10 mx-auto mb-2 text-indigo-500"></i>
+                    <p class="text-base font-medium">C++ (Basics)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 4. Projects Section (Mock Content - Aligned to Core CS) --><section id="projects" class="py-12 border-t border-gray-700">
+            <h2 class="text-3xl font-bold text-white section-header">Core Programming Exercises</h2>
+            <p class="text-gray-400 mb-6 italic">Showcasing fundamental problem-solving skills learned through academic and personal coding challenges.</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Project 1: C/C++ Data Structures --><div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-amber-500 flex items-center">
+                        <i data-lucide="clipboard-list" class="w-5 h-5 mr-2"></i> Basic Algorithm Implementations
+                    </h3>
+                    <p class="text-gray-400 mb-3">**Tech Stack:** C / C++</p>
+                    <p class="mb-4">
+                        Implementation of foundational algorithms such as Sorting (Bubble, Merge) and Searching (Binary, Linear). This project focuses purely on optimization, time complexity analysis, and mastering algorithmic logic in C/C++.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/amanojkumar07" target="_blank" class="text-sm font-medium text-gray-300 hover:text-white transition duration-150 flex items-center">
+                            <i data-lucide="github" class="w-4 h-4 mr-1"></i> View GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: Python Scripting --><div class="card p-6">
+                    <h3 class="text-xl font-semibold mb-2 text-amber-500 flex items-center">
+                        <i data-lucide="book-open-check" class="w-5 h-5 mr-2"></i> Python Fundamentals Showcase
+                    </h3>
+                    <p class="text-gray-400 mb-3">**Tech Stack:** Python 3</p>
+                    <p class="mb-4">
+                        A collection of small scripts and programs demonstrating basic Python syntax, data types (dictionaries, lists), function handling, and file operations. This forms the basis for future AI/DS scripting needs.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/amanojkumar07" target="_blank" class="text-sm font-medium text-gray-300 hover:text-white transition duration-150 flex items-center">
+                            <i data-lucide="github" class="w-4 h-4 mr-1"></i> View GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Achievements Section (Updated with CP Stats) --><section id="achievements" class="py-12 border-t border-gray-700">
+            <h2 class="text-3xl font-bold text-white section-header">Competitive Programming Activity</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="card p-5 text-center">
+                    <i data-lucide="trophy" class="w-8 h-8 mx-auto mb-2 text-amber-400"></i>
+                    <p class="font-semibold text-white">CodeChef Streak</p>
+                    <p class="text-xl font-extrabold text-amber-500">101+</p>
+                    <p class="text-sm text-gray-400">Consecutive days maintaining the CodeChef streak.</p>
+                </div>
+                <div class="card p-5 text-center">
+                    <i data-lucide="activity" class="w-8 h-8 mx-auto mb-2 text-green-400"></i>
+                    <p class="font-semibold text-white">CodeChef Contests</p>
+                    <p class="text-xl font-extrabold text-amber-500">9</p>
+                    <p class="text-sm text-gray-400">Contests participated to build problem-solving muscle.</p>
+                </div>
+                <div class="card p-5 text-center">
+                    <i data-lucide="trending-up" class="w-8 h-8 mx-auto mb-2 text-sky-400"></i>
+                    <p class="font-semibold text-white">CodeChef Global Rank</p>
+                    <p class="text-xl font-extrabold text-amber-500">1349</p>
+                    <p class="text-sm text-gray-400">Current ranking achieved through consistent effort.</p>
+                </div>
+                <div class="card p-5 text-center">
+                    <i data-lucide="target" class="w-8 h-8 mx-auto mb-2 text-red-400"></i>
+                    <p class="font-semibold text-white">LeetCode Problems</p>
+                    <p class="text-xl font-extrabold text-amber-500">10+</p>
+                    <p class="text-sm text-gray-400">Problems solved, focusing on array and string manipulations.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. Contact Section --><section id="contact" class="py-12 border-t border-gray-700">
+            <h2 class="text-3xl font-bold text-white section-header">Connect With Me</h2>
+            <div class="max-w-2xl mx-auto">
+                <p class="text-gray-400 mb-8 text-center">I'm excited to connect with peers and mentors. Feel free to reach out for academic or coding discussions!</p>
+
+                <!-- Social Links --><div class="flex justify-center space-x-6 mb-10">
+                    <a href="https://linkedin.com/in/manoj-kumar-a-626084344" target="_blank" title="LinkedIn" class="text-gray-300 hover:text-amber-500 transition duration-150">
+                        <i data-lucide="linkedin" class="w-8 h-8"></i>
+                    </a>
+                    <a href="https://github.com/amanojkumar07" target="_blank" title="GitHub" class="text-gray-300 hover:text-amber-500 transition duration-150">
+                        <i data-lucide="github" class="w-8 h-8"></i>
+                    </a>
+                    <a href="mailto:amanojkumar991@gmail.com" target="_blank" title="Email" class="text-gray-300 hover:text-amber-500 transition duration-150">
+                        <i data-lucide="mail" class="w-8 h-8"></i>
+                    </a>
+                    <a href="https://leetcode.com/amanojkumar3007" target="_blank" title="LeetCode" class="text-gray-300 hover:text-amber-500 transition duration-150">
+                         <!-- Custom SVG for LeetCode --><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-8 h-8 fill-current">
+                            <path d="M192 429.8c31.1 27.6 60.1 53 103 53 43 0 76.6-27 101.6-56.9 8.2-9.8 19-12.7 29.5-8.4 10.5 4.3 15.6 15.8 11.3 26.3C397.6 492 344 512 295 512c-42.3 0-89.9-24.8-132.3-67.4-44.4-44.4-86.8-105.8-97.4-184.7-2.6-19.4 14.2-35.8 33.8-35.8h.6c17.5 0 32.4 13.5 34.1 31C137 363.6 160.8 403.4 192 429.8zM416 192c0-82.5-33.5-156.9-87.9-211.9c-10.2-10.4-27.1-10.8-37.8-.8s-10.9 27.1-.8 37.8c48.8 47.9 75.9 112.5 75.9 174.9 0 57.3-22.3 111.9-63 153.6 3.1-3.2 6.1-6.5 9.1-9.7 44.4-44.4 78.4-105.7 91.5-174.1 3.5-17.7-10.4-33.8-28.1-33.8h-1.8zM315.6 20.8C303.4 10 286.9 0 263.7 0c-43 0-76.6 27-101.6 56.9-8.2 9.8-19 12.7-29.5 8.4-10.5-4.3-15.6-15.8-11.3-26.3C130.4 19.9 184 0 233 0c42.3 0 89.9 24.8 132.3 67.4 44.4 44.4 86.8 105.8 97.4 184.7 2.6 19.4-14.2 35.8-33.8 35.8h-.6c-17.5 0-32.4-13.5-34.1-31-4.7-49.3-28.5-89.1-59-115.1z"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Simple Contact Form (Non-functional, for structure) --><form onsubmit="showContactMessage(event)" class="space-y-4 p-8 card shadow-xl">
+                    <input type="text" placeholder="Your Name" required class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-amber-500 focus:border-amber-500 text-white">
+                    <input type="email" placeholder="Your Email (Optional)" class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-amber-500 focus:border-amber-500 text-white">
+                    <textarea placeholder="Your Message" rows="4" required class="w-full p-3 rounded-lg bg-gray-800 border border-gray-700 focus:ring-amber-500 focus:border-amber-500 text-white"></textarea>
+                    <button type="submit" class="w-full py-3 bg-amber-500 text-gray-900 font-bold rounded-lg hover:bg-amber-400 transition duration-150 shadow-md">Send Message</button>
+                    <div id="contact-status" class="text-center pt-2 text-sm text-green-400"></div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer --><footer class="bg-gray-900 border-t border-gray-700 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-400">
+            <p>&copy; 2025 MANOJKUMAR.A. All rights reserved.</p>
+            <p class="text-xs mt-1">Aspiring AI/DS & Full-Stack Developer | Velammal Engineering College</p>
+        </div>
+    </footer>
+
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // --- Navigation Menu Logic ---
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('open');
+            const icon = menuButton.querySelector('i');
+            if (mobileMenu.classList.contains('open')) {
+                icon.setAttribute('data-lucide', 'x'); // Change to 'x' icon when open
+            } else {
+                icon.setAttribute('data-lucide', 'menu'); // Change back to 'menu' icon when closed
+            }
+            lucide.createIcons();
+        }
+
+        function closeMenu() {
+            mobileMenu.classList.remove('open');
+            menuButton.querySelector('i').setAttribute('data-lucide', 'menu');
+            lucide.createIcons();
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+
+
+        // --- Simple Contact Message (Non-functional Placeholder) ---
+        function showContactMessage(event) {
+            event.preventDefault();
+            const statusDiv = document.getElementById('contact-status');
+            statusDiv.textContent = 'Message sent! (Note: The form is not fully functional, but thanks for connecting!)';
+            
+            // Clear form and message after 5 seconds
+            setTimeout(() => {
+                statusDiv.textContent = '';
+                event.target.reset();
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
